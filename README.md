@@ -1,4 +1,3 @@
-
 # Projet Angular – Mise en pratique
 
 Ce projet a été réalisé dans le but de mettre en pratique les concepts fondamentaux du développement frontend avec Angular.
@@ -15,7 +14,7 @@ L’objectif principal de ce travail est de :
 - Mettre en place une logique de séparation entre composants et services
 - Simuler une première intégration frontend (et préparation backend)
 
-  ![Texte alternatif](src/capture d'ecran/img.png)
+  ![Texte alternatif](frontend/enset-app/src/captures/img.png)
 # Étapes réalisées
 ## Installation de Node.js et Angular cli-
 
@@ -25,18 +24,18 @@ Après l’installation de Node.js, nous avons installé Angular CLI, un outil e
 
 ### Commande d’installation :
 
-![Texte alternatif](src/capture d'ecran/InstallerCliAngulare.png)
+![Texte alternatif](frontend/enset-app/src/captures/InstallerCliAngulare.png)
 
 ### Vérification de l’installation :
 
-![Texte alternatif](src/capture d'ecran/VesionCliAngular.png)
+![Texte alternatif](frontend/enset-app/src/captures/VesionCliAngular.png)
 
 ### Création du projet Angular
 
 La commande utilisée pour générer le projet est :
 
 
-![Texte alternatif](src/capture d'ecran/Create_Structure_project.png)
+![Texte alternatif](frontend/enset-app/src/captures/Create_Structure_project.png)
 
 Cette commande génère automatiquement :
 
@@ -47,17 +46,17 @@ Cette commande génère automatiquement :
 
 Pour exécuter l’application localement :
 
-![Texte alternatif](src/capture d'ecran/img_1.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_1.png)
 
 ### Installation de Bootstrap
 
 Afin d’améliorer le design de l’application, nous avons installé Bootstrap.
 
-![Texte alternatif](src/capture d'ecran/InstallBootstarp.png)
+![Texte alternatif](frontend/enset-app/src/captures/InstallBootstarp.png)
 
 Il existe deux méthodes principales pour ajouter Bootstrap dans un projet Angular :
 
-1. Via le fichier angular.json 
+1. Via le fichier angular.json
 
 On ajoute le fichier CSS de Bootstrap dans la section styles :
 
@@ -66,7 +65,7 @@ On ajoute le fichier CSS de Bootstrap dans la section styles :
 
 On peut aussi importer Bootstrap directement dans le fichier de style  global :
 
-![Texte alternatif](src/capture d'ecran/img_4.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_4.png)
 
 
 
@@ -92,11 +91,11 @@ Ensuite, nous avons créé les premiers composants de l’application.
 
 - Création du composant Home
 
-![Texte alternatif](src/capture d'ecran/img_2.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_2.png)
 
 - Création du composant Products
 
-![Texte alternatif](src/capture d'ecran/img_3.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_3.png)
 
 ### Mise en place du Routing (Home & Products)
 
@@ -106,17 +105,17 @@ Dans cette étape, nous avons configuré le routing de l’application afin de n
 
 Les routes de l’application sont définies dans le fichier app.routes.ts.
 
-![Texte alternatif](src/capture d'ecran/img_6.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_6.png)
 
 2. Activation du routing dans l’application
 
 Le routing est activé dans le fichier app.ts (AppComponent) en important les modules nécessaires.
 
-![Texte alternatif](src/capture d'ecran/img_5.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_5.png)
 
 3. Ajout dans le template principal
 
-![Texte alternatif](src/capture d'ecran/imge.png)
+![Texte alternatif](frontend/enset-app/src/captures/imge.png)
 
 Dans le fichier app.html, nous avons ajouté la zone d’affichage dynamique :
 
@@ -133,26 +132,24 @@ Dans cette étape, nous avons développé le composant Products dans Angular afi
 Dans le fichier products.ts, nous avons créé une liste de produits sous forme de tableau statique.
 
 
-![Texte alternatif](src/capture d'ecran/img%20(2).png)
+![Texte alternatif](frontend/enset-app/src/captures/img-2.png)
 
- Ces données sont utilisées pour simuler une source de données avant l’intégration d’un backend.
+Ces données sont utilisées pour simuler une source de données avant l’intégration d’un backend.
 
 2. Affichage dans le template HTML
 
 
 Dans le fichier products.html, nous avons affiché les produits dans un tableau.
 
-![Texte alternatif](src/capture d'ecran/img%20(1).png)
+![Texte alternatif](frontend/enset-app/src/captures/img-1.png)
 
- Utilisation des directives Angular
+Utilisation des directives Angular
 - @for → pour parcourir la liste des produits
 - @if → pour afficher conditionnellement certaines informations
 ### Création du Service et évolution vers une architecture backend
 1. Création du service
 
 Dans cette étape, nous avons introduit un service Angular afin de centraliser la logique métier et préparer la communication avec un backend.
-
-![Texte alternatif](src/capture d'ecran/img%20(1).png)
 
 Objectif
 - Séparer la logique métier du composant
@@ -161,11 +158,12 @@ Objectif
 2. Version initiale (sans backend)
 
 Au départ, le service utilisait des données statiques.
-![Texte alternatif](src/capture d'ecran/img%20(3).png)
+
+![Texte alternatif](frontend/enset-app/src/captures/img-3.png)
 
 produitComponent maintenant utilse Productservice
 
-![Texte alternatif](src/capture d'ecran/img%20(4).png)
+![Texte alternatif](frontend/enset-app/src/captures/img-4.png)
 
 3. Intégration du backend (API REST)
 
@@ -177,12 +175,12 @@ Modifications apportées
 - Communication avec une API REST
 - Suppression et récupération des données depuis le serveur
 
-  ![Texte alternatif](src/capture d'ecran/img_7.png)
+  ![Texte alternatif](frontend/enset-app/src/captures/img_7.png)
 
-![Texte alternatif](src/capture d'ecran/img%20(5).png)
+![Texte alternatif](frontend/enset-app/src/captures/img-5.png)
 
-![Texte alternatif](src/capture d'ecran/img%20(6).png)
+![Texte alternatif](frontend/enset-app/src/captures/img-6.png)
 
- ## L'interface de l'application 
+## L'interface de l'application
 
-![Texte alternatif](src/capture d'ecran/img_8.png)
+![Texte alternatif](frontend/enset-app/src/captures/img_8.png)
