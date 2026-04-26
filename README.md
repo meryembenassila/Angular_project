@@ -2,15 +2,15 @@
 
 Ce projet a été réalisé dans le but de mettre en pratique les concepts fondamentaux du développement frontend avec Angular.
 
-Il s’agit d’une application simple de gestion de produits permettant de consolider les notions apprises en cours, notamment la création de composants, la manipulation des données, le data binding et l’utilisation des services.
+Il s'agit d'une application simple de gestion de produits permettant de consolider les notions apprises en cours, notamment la création de composants, la manipulation des données, le data binding et l'utilisation des services.
 
 # Objectif du projet
 
-L’objectif principal de ce travail est de :
+L'objectif principal de ce travail est de :
 
-- Appliquer les bases d’Angular dans un projet concret
-- Comprendre l’architecture basée sur les composants
-- Manipuler les données dynamiquement dans l’interface utilisateur
+- Appliquer les bases d'Angular dans un projet concret
+- Comprendre l'architecture basée sur les composants
+- Manipuler les données dynamiquement dans l'interface utilisateur
 - Mettre en place une logique de séparation entre composants et services
 - Simuler une première intégration frontend (et préparation backend)
 
@@ -18,24 +18,24 @@ L’objectif principal de ce travail est de :
 # Étapes réalisées
 ## Installation de Node.js et Angular cli-
 
-Avant de commencer avec Angular, il est nécessaire d’installer Node.js et de vérifier que tout est correctement configuré.
+Avant de commencer avec Angular, il est nécessaire d'installer Node.js et de vérifier que tout est correctement configuré.
 
-Après l’installation de Node.js, nous avons installé Angular CLI, un outil essentiel pour créer et gérer les projets Angular.
+Après l'installation de Node.js, nous avons installé Angular CLI, un outil essentiel pour créer et gérer les projets Angular.
 
-### Commande d’installation :
+### Commande d'installation :
 
-![Texte alternatif](frontend/enset-app/src/captures/InstallerCliAngulare.png)
+![Texte alternatif](frontend/enset-app/src/captures/installercliangulare.png)
 
-### Vérification de l’installation :
+### Vérification de l'installation :
 
-![Texte alternatif](frontend/enset-app/src/captures/VesionCliAngular.png)
+![Texte alternatif](frontend/enset-app/src/captures/vesioncliangular.png)
 
 ### Création du projet Angular
 
 La commande utilisée pour générer le projet est :
 
 
-![Texte alternatif](frontend/enset-app/src/captures/Create_Structure_project.png)
+![Texte alternatif](frontend/enset-app/src/captures/create_structure_project.png)
 
 Cette commande génère automatiquement :
 
@@ -44,15 +44,15 @@ Cette commande génère automatiquement :
 - les dépendances nécessaires
 ### Lancement du serveur de développement
 
-Pour exécuter l’application localement :
+Pour exécuter l'application localement :
 
 ![Texte alternatif](frontend/enset-app/src/captures/img_1.png)
 
 ### Installation de Bootstrap
 
-Afin d’améliorer le design de l’application, nous avons installé Bootstrap.
+Afin d'améliorer le design de l'application, nous avons installé Bootstrap.
 
-![Texte alternatif](frontend/enset-app/src/captures/InstallBootstarp.png)
+![Texte alternatif](frontend/enset-app/src/captures/installbootstarp.png)
 
 Il existe deux méthodes principales pour ajouter Bootstrap dans un projet Angular :
 
@@ -75,19 +75,19 @@ On peut aussi importer Bootstrap directement dans le fichier de style  global :
 Après la création du projet, nous avons analysé la structure générée automatiquement par Angular CLI.
 
 -  comment Angular est structuré
--  comment l’application démarre
+-  comment l'application démarre
 -  comment les composants sont organisés
 
-### Test de l’AppComponent
+### Test de l'AppComponent
 
-Nous avons testé le composant principal de l’application (AppComponent) pour vérifier que l’application fonctionne correctement.
+Nous avons testé le composant principal de l'application (AppComponent) pour vérifier que l'application fonctionne correctement.
 
-L’application se lance correctement
+L'application se lance correctement
 Le composant principal est affiché dans le navigateur
 
 ### Création des composants Home et Products
 
-Ensuite, nous avons créé les premiers composants de l’application.
+Ensuite, nous avons créé les premiers composants de l'application.
 
 - Création du composant Home
 
@@ -99,15 +99,15 @@ Ensuite, nous avons créé les premiers composants de l’application.
 
 ### Mise en place du Routing (Home & Products)
 
-Dans cette étape, nous avons configuré le routing de l’application afin de naviguer entre les pages Home et Products.
+Dans cette étape, nous avons configuré le routing de l'application afin de naviguer entre les pages Home et Products.
 
 1. Configuration des routes
 
-Les routes de l’application sont définies dans le fichier app.routes.ts.
+Les routes de l'application sont définies dans le fichier app.routes.ts.
 
 ![Texte alternatif](frontend/enset-app/src/captures/img_6.png)
 
-2. Activation du routing dans l’application
+2. Activation du routing dans l'application
 
 Le routing est activé dans le fichier app.ts (AppComponent) en important les modules nécessaires.
 
@@ -117,15 +117,15 @@ Le routing est activé dans le fichier app.ts (AppComponent) en important les mo
 
 ![Texte alternatif](frontend/enset-app/src/captures/imge.png)
 
-Dans le fichier app.html, nous avons ajouté la zone d’affichage dynamique :
+Dans le fichier app.html, nous avons ajouté la zone d'affichage dynamique :
 
 Rôle du router-outlet :
 
-Il permet d’afficher dynamiquement les composants selon la route sélectionnée.
+Il permet d'afficher dynamiquement les composants selon la route sélectionnée.
 
 ### Création du composant Products avec des données statiques
 
-Dans cette étape, nous avons développé le composant Products dans Angular afin d’afficher une liste de produits.
+Dans cette étape, nous avons développé le composant Products dans Angular afin d'afficher une liste de produits.
 
 1. Définition des données statiques
 
@@ -134,7 +134,7 @@ Dans le fichier products.ts, nous avons créé une liste de produits sous forme 
 
 ![Texte alternatif](frontend/enset-app/src/captures/img-2.png)
 
-Ces données sont utilisées pour simuler une source de données avant l’intégration d’un backend.
+Ces données sont utilisées pour simuler une source de données avant l'intégration d'un backend.
 
 2. Affichage dans le template HTML
 
@@ -154,7 +154,7 @@ Dans cette étape, nous avons introduit un service Angular afin de centraliser l
 Objectif
 - Séparer la logique métier du composant
 - Rendre le code plus maintenable
-- Préparer l’intégration avec une API backend
+- Préparer l'intégration avec une API backend
 2. Version initiale (sans backend)
 
 Au départ, le service utilisait des données statiques.
@@ -167,7 +167,7 @@ produitComponent maintenant utilse Productservice
 
 3. Intégration du backend (API REST)
 
-Dans cette étape, nous avons connecté l’application à un backend via HTTP.
+Dans cette étape, nous avons connecté l'application à un backend via HTTP.
 
 Modifications apportées
 - Utilisation de HttpClient
